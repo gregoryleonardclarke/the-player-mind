@@ -2,7 +2,7 @@ import urllib.request, re, html
 from urllib.parse import urljoin
 urls=[
  'https://www.gamersyde.com/news_20_minutes_of_skyrim_gameplay-11878_en.html',
- 'https://www.moddb.com/games/skyrim/videos/e3-skyrim-demo'
+ 'https://www.gamersyde.com/video_the_elder_scrolls_v_skyrim_gameplay_demo_part_1-23439_en.html'
 ]
 for u in urls:
     print("SOURCE",u,flush=True)
