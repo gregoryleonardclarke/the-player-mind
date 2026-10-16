@@ -1,0 +1,31 @@
+name: Fast Skyrim mini-lesson preview — NEVER PUBLISH
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/render_skyrim_lesson_fast.py"
+      - ".github/workflows/skyrim-mini-lesson-fast.yml"
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install --quiet pillow numpy scipy
+      - name: Render 1080 × 1920 Skyrim psychology lesson
+        run: python scripts/render_skyrim_lesson_fast.py
+      - name: Keep video as review artifact only
+        uses: actions/upload-artifact@v4
+        with:
+          name: Skyrim-psychology-lesson-review-118-seconds
+          path: |
+            output/skyrim_potion_psychology_mini_lesson.mp4
+            output/mini_lesson_preview.png
+          retention-days: 14
+          if-no-files-found: error
