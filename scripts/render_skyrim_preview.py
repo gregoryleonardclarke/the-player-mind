@@ -9,7 +9,7 @@ import subprocess, math, os, glob
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"output"
 OUT.mkdir(exist_ok=True)
-W,H=720,1280
+W,H=1080,1920
 DURATION=34
 FPS=30
 SOURCE="https://www.youtube.com/watch?v=5xwboyafbwc" # Bethesda Softworks official gameplay demo
@@ -25,37 +25,36 @@ def find_font():
     raise RuntimeError("No bold font installed")
 
 def get_footage():
-    if os.getenv("FOOTAGE_FILE") and Path(os.environ["FOOTAGE_FILE"]).exists():
-        return Path(os.environ["FOOTAGE_FILE"])
-    # Only real captured Skyrim gameplay: fail if unavailable; never substitute generated slides.
-    targets=[
-        ("https://www.dailymotion.com/video/x9xjfas", "whiterun_aerial", "*00:00:10-00:00:47"),
-        ("https://www.dailymotion.com/video/x7tyy7q", "skyrim_playthrough", "*00:01:30-00:02:15"),
-        ("https://vimeo.com/182690011", "vimeo_skyrim", "*00:00:00-00:00:40"),
-        ("https://vimeo.com/713796833", "vimeo_skyrim2", "*00:00:00-00:00:40"),
-        ("https://www.gamersyde.com/video_the_elder_scrolls_v_skyrim_gameplay_demo_part_1-23439_en.html", "bethesda_download", "*00:01:30-00:02:20"),
-        ("https://www.youtube.com/watch?v=5xwboyafbwc", "official_bethesda", "*00:01:30-00:02:20"),
-        ("https://www.youtube.com/watch?v=QWoF8S_F3Bo", "backup_gameplay", "*00:01:30-00:02:20"),
-    ]
-    for url, name, section in targets:
-        pattern=str(OUT / (name+".%(ext)s"))
-        args=[
-          "yt-dlp","--no-playlist","--no-part","--no-warnings",
-          "--download-sections",section,
-          "--force-keyframes-at-cuts",
-          "-f","bv*[height<=720]+ba/b[height<=720]/best",
-          "--merge-output-format","mp4","-o",pattern,url
-        ]
-        try:
-            cmd(args)
-            candidates=sorted(OUT.glob(name+".*"),key=lambda x:x.stat().st_size,reverse=True)
-            candidates=[c for c in candidates if c.suffix.lower() in {".mp4",".webm",".mkv"}]
-            if candidates and candidates[0].stat().st_size>1000000:
-                print("Selected real gameplay:",candidates[0])
-                return candidates[0]
-        except Exception as e:
-            print("Source unavailable:",e,flush=True)
-    raise RuntimeError("No genuine Skyrim gameplay could be downloaded. Deliberately refusing to render fake gameplay.")
+    """Download verified original 1920x1080 Skyrim gameplay, not a low-resolution stream."""
+    import json, urllib.request, urllib.parse
+    identifier="20111111-skyrim-gameplay-bleak-falls-barrow-boss-fight-116s-1920x-1080-q-99h-fmyt-oq"
+    meta_url="https://archive.org/metadata/"+identifier
+    with urllib.request.urlopen(urllib.request.Request(meta_url,headers={"User-Agent":"Mozilla/5.0"}),timeout=60) as res:
+        meta=json.load(res)
+    choices=[f for f in meta.get("files",[])
+             if f.get("source")=="original"
+             and f.get("name","").lower().endswith(".mp4")
+             and int(f.get("width") or 0)>=1920 and int(f.get("height") or 0)>=1080]
+    if not choices:
+        raise RuntimeError("Archive no longer offers an original Full HD Skyrim recording")
+    src=choices[0]
+    url="https://archive.org/download/"+identifier+"/"+urllib.parse.quote(src["name"])
+    print("Downloading verified 1920x1080 original:",url,flush=True)
+    target=OUT/"skyrim_hd_source.mp4"
+    request=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0"})
+    with urllib.request.urlopen(request,timeout=150) as r, target.open("wb") as dest:
+        while True:
+            b=r.read(1024*1024)
+            if not b:break
+            dest.write(b)
+    if target.stat().st_size<10*1024*1024:
+        raise RuntimeError("Original video file unexpectedly small")
+    result=subprocess.check_output(["ffprobe","-v","error","-select_streams","v:0","-show_entries","stream=width,height","-of","json",str(target)])
+    dimensions=json.loads(result)["streams"][0]
+    print("SOURCE RESOLUTION VERIFIED:",dimensions,"bytes:",target.stat().st_size,flush=True)
+    if dimensions["width"]<1920 or dimensions["height"]<1080:
+        raise RuntimeError("Refusing non-HD source")
+    return target
 
 def make_music(path):
     """Original chill instrumental; no generative speech."""
@@ -113,8 +112,8 @@ card_data=[
 def make_card(index, lines, emphasis):
     img=Image.new("RGBA",(W,H),(0,0,0,0))
     d=ImageDraw.Draw(img)
-    font=ImageFont.truetype(FONT,52 if len(lines)<3 else 46)
-    safe_w=590
+    font=ImageFont.truetype(FONT,78 if len(lines)<3 else 69)
+    safe_w=885
     coords=[]
     for line in lines:
         box=d.textbbox((0,0),line,font=font,stroke_width=0)
@@ -122,23 +121,23 @@ def make_card(index, lines, emphasis):
         if width>safe_w:
             # Fit text; rather than crop
             size=int(font.size*safe_w/width)
-            f=ImageFont.truetype(FONT,max(30,size))
+            f=ImageFont.truetype(FONT,max(45,size))
         else:f=font
         b=d.textbbox((0,0),line,font=f)
         coords.append((line,f,b,b[3]-b[1]))
-    row_heights=[c[3]+28 for c in coords]
+    row_heights=[c[3]+42 for c in coords]
     total=sum(row_heights)
-    start=(H-total)//2 - 28
+    start=(H-total)//2 - 42
     pad=26
-    panel=(42,start-26,W-42,start+total+25)
-    d.rounded_rectangle(panel, radius=22,fill=(9,12,23,205))
+    panel=(63,start-39,W-63,start+total+38)
+    d.rounded_rectangle(panel, radius=33,fill=(9,12,23,205))
     y=start
     for i,(line,f,b,h) in enumerate(coords):
         width=d.textbbox((0,0),line,font=f)[2]
         x=(W-width)//2
         color=(255,209,98,255) if i==emphasis else (255,255,255,255)
         d.text((x,y),line,font=f,fill=color,stroke_width=2,stroke_fill=(5,7,12,255))
-        y+=h+28
+        y+=h+42
     path=OUT/f"caption_{index:02d}.png"
     img.save(path)
     return path
@@ -151,7 +150,7 @@ def render(footage):
     # User review is via private Actions artifact; this workflow contains NO publish step.
     inputs=["-stream_loop","-1","-i",str(footage),"-i",str(audio)]
     for p in plates:inputs+=["-loop","1","-i",str(p)]
-    filt=["[0:v]fps=30,scale=720:1280:force_original_aspect_ratio=increase,crop=720:1280,eq=brightness=-0.035:saturation=0.95,setsar=1[v0]"]
+    filt=["[0:v]fps=30,scale=1080:1920:force_original_aspect_ratio=increase:flags=lanczos,crop=1080:1920,eq=brightness=-0.035:saturation=0.95,setsar=1[v0]"]
     last="v0"
     for i,(start,end,_,_) in enumerate(card_data):
         nxt=f"v{i+1}"
@@ -160,7 +159,7 @@ def render(footage):
         last=nxt
     cmd(["ffmpeg","-hide_banner","-y",*inputs,"-filter_complex",";".join(filt),
           "-map",f"[{last}]","-map","1:a:0","-t",str(DURATION),"-r",str(FPS),
-          "-c:v","libx264","-preset","veryfast","-crf","23",
+          "-c:v","libx264","-preset","veryfast","-crf","19",
           "-pix_fmt","yuv420p","-c:a","aac","-b:a","160k",
           "-movflags","+faststart",str(OUT/"skyrim_potions_review.mp4")])
     cmd(["ffmpeg","-hide_banner","-y","-ss","1.1","-i",str(OUT/"skyrim_potions_review.mp4"),
