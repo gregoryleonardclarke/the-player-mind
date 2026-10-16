@@ -5,6 +5,7 @@ on:
     paths:
       - ".github/workflows/skyrim-preview.yml"
       - "scripts/render_skyrim_preview.py"
+      - "scripts/check_source.py"
 
 permissions:
   contents: read
