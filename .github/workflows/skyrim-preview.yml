@@ -20,6 +20,8 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
           python -m pip install --disable-pip-version-check --quiet yt-dlp pillow numpy scipy
+      - name: Check direct footage host
+        run: python scripts/check_source.py
       - name: Download Bethesda Skyrim gameplay and render video
         run: python scripts/render_skyrim_preview.py
       - name: Attach preview for manual review (never posts to social platforms)
