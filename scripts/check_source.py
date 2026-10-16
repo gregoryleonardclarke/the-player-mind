@@ -1,7 +1,19 @@
-import urllib.request
-u='https://www.gamersyde.com/news_20_minutes_of_skyrim_gameplay-11878_en.html'
-try:
-    r=urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0'}),timeout=15)
-    print('Gamersyde status:',r.status,'type:',r.headers.get('content-type'))
-    print(r.read(2500).decode('utf-8',errors='replace'))
-except Exception as e: print('Gamersyde:',str(e))
+import urllib.request, re, html
+from urllib.parse import urljoin
+urls=[
+ 'https://www.gamersyde.com/news_20_minutes_of_skyrim_gameplay-11878_en.html',
+ 'https://www.moddb.com/games/skyrim/videos/e3-skyrim-demo'
+]
+for u in urls:
+    print("SOURCE",u,flush=True)
+    try:
+        r=urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0'}),timeout=20)
+        body=r.read().decode('utf-8',errors='replace')
+        print('Status',r.status,'length',len(body),flush=True)
+        found=[]
+        for h in re.findall(r'''(?:href|src)=["']([^"']+)["']''',body,re.I):
+            full=urljoin(u,html.unescape(h))
+            if any(k in full.lower() for k in ['skyrim','download','video','mp4','gamersyde.com/stream','media.moddb','media.gamersyde']):
+                if full not in found:found.append(full)
+        print("CANDIDATE LINKS",found[:90],flush=True)
+    except Exception as e:print('ERROR',str(e),flush=True)
