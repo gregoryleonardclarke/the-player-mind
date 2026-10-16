@@ -1,0 +1,48 @@
+name: Host review video for Buffer (media hosting only)
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/host-player-mind-video.yml"
+permissions:
+  contents: write
+  actions: read
+jobs:
+  host:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download previously rendered Skyrim mini-lesson
+        uses: actions/download-artifact@v4
+        with:
+          name: the-player-mind-skyrim-118s-preview
+          run-id: 38912378447
+          github-token: ${{ github.token }}
+          path: media
+      - name: Verify MP4 format
+        run: |
+          test -s media/skyrim_potion_psychology_mini_lesson.mp4
+          python - <<'PY'
+          import subprocess,json
+          p="media/skyrim_potion_psychology_mini_lesson.mp4"
+          d=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration:stream=codec_type,width,height","-of","json",p]))
+          assert 116<float(d["format"]["duration"])<121
+          assert any(x.get("width")==1080 and x.get("height")==1920 for x in d["streams"])
+          assert any(x.get("codec_type")=="audio" for x in d["streams"])
+          print("Verified MP4: ~118 sec, 1080x1920, with audio.")
+          PY
+      - name: Create persistent public media download
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh release view the-player-mind-skyrim-potions-v1 >/dev/null 2>&1; then
+            gh release create the-player-mind-skyrim-potions-v1 \
+              media/skyrim_potion_psychology_mini_lesson.mp4#Skyrim_Potion_Psychology_The_Player_Mind.mp4 \
+              --title "The Player Mind — Skyrim and Potion Psychology" \
+              --notes "Research-based 118-second Skyrim gameplay psychology short, made for TikTok, Instagram Reels and YouTube Shorts."
+          fi
+          gh release view the-player-mind-skyrim-potions-v1 --json assets,url
+          curl -fsSL -r 0-1023 -o /dev/null -w "ASSET HTTP %{http_code}\n" \
+            "https://github.com/$(echo "$GITHUB_REPOSITORY")/releases/download/the-player-mind-skyrim-potions-v1/Skyrim_Potion_Psychology_The_Player_Mind.mp4"
+# Intentionally no scheduling or social publishing.
