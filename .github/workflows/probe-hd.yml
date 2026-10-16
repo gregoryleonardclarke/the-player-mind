@@ -1,0 +1,17 @@
+name: Probe Skyrim HD sources (no publishing)
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/probe_hd.py"
+      - ".github/workflows/probe-hd.yml"
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --quiet yt-dlp
+      - run: python scripts/probe_hd.py
