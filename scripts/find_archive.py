@@ -1,15 +1,16 @@
 import requests
 queries=[
- 'title:(Skyrim) AND mediatype:(movies)',
- 'title:(Elder Scrolls V) AND mediatype:(movies)',
- '(Skyrim gameplay) AND mediatype:(movies)'
+ 'title:(Skyrim) AND title:(1080p) AND mediatype:(movies)',
+ 'title:(Skyrim) AND title:(60fps) AND mediatype:(movies)',
+ 'title:(Skyrim) AND title:(Special Edition) AND mediatype:(movies)',
+ 'title:(Skyrim gameplay) AND mediatype:(movies)'
 ]
 for q in queries:
  try:
-  r=requests.get('https://archive.org/advancedsearch.php',params={'q':q,'fl[]':['identifier','title'],'rows':30,'page':1,'output':'json'},timeout=20)
+  r=requests.get('https://archive.org/advancedsearch.php',params={'q':q,'fl[]':['identifier','title'],'rows':100,'page':1,'output':'json'},timeout=25)
   print('SEARCH',q,'status',r.status_code,flush=True)
-  if r.status_code!=200: print(r.text[:300]);continue
-  data=r.json()
-  print('COUNT',data.get('response',{}).get('numFound'),flush=True)
-  for d in data.get('response',{}).get('docs',[]):print('ITEM',d,flush=True)
- except Exception as e:print('ERROR',repr(e),flush=True)
+  if r.status_code!=200:continue
+  dat=r.json()
+  print('COUNT',dat.get('response',{}).get('numFound'),flush=True)
+  for d in dat.get('response',{}).get('docs',[])[:100]:print('ITEM',d,flush=True)
+ except Exception as e:print('ERROR',str(e),flush=True)
