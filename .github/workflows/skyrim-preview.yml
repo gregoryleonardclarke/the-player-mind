@@ -1,0 +1,33 @@
+name: Skyrim gameplay TikTok PREVIEW ONLY
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/skyrim-preview.yml"
+      - "scripts/render_skyrim_preview.py"
+
+permissions:
+  contents: read
+
+jobs:
+  video-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install --disable-pip-version-check --quiet yt-dlp pillow numpy scipy
+      - name: Download Bethesda Skyrim gameplay and render video
+        run: python scripts/render_skyrim_preview.py
+      - name: Attach preview for manual review (never posts to social platforms)
+        uses: actions/upload-artifact@v4
+        with:
+          name: skyrim-potions-review
+          path: |
+            output/skyrim_potions_review.mp4
+            output/preview.png
+          retention-days: 7
+          if-no-files-found: error
