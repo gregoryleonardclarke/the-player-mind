@@ -20,6 +20,10 @@ jobs:
           run-id: 38912378447
           github-token: ${{ github.token }}
           path: media
+      - name: Install FFmpeg verification utility
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
       - name: Verify MP4 format
         run: |
           test -s media/skyrim_potion_psychology_mini_lesson.mp4
