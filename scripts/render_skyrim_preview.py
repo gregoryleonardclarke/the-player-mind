@@ -29,15 +29,17 @@ def get_footage():
         return Path(os.environ["FOOTAGE_FILE"])
     # Only real captured Skyrim gameplay: fail if unavailable; never substitute generated slides.
     targets=[
-        ("https://www.gamersyde.com/video_the_elder_scrolls_v_skyrim_gameplay_demo_part_1-23439_en.html", "bethesda_download"),
-        ("https://www.youtube.com/watch?v=5xwboyafbwc", "official_bethesda"),
-        ("https://www.youtube.com/watch?v=QWoF8S_F3Bo", "backup_gameplay"),
+        ("https://vimeo.com/182690011", "vimeo_skyrim", "*00:00:00-00:00:40"),
+        ("https://vimeo.com/713796833", "vimeo_skyrim2", "*00:00:00-00:00:40"),
+        ("https://www.gamersyde.com/video_the_elder_scrolls_v_skyrim_gameplay_demo_part_1-23439_en.html", "bethesda_download", "*00:01:30-00:02:20"),
+        ("https://www.youtube.com/watch?v=5xwboyafbwc", "official_bethesda", "*00:01:30-00:02:20"),
+        ("https://www.youtube.com/watch?v=QWoF8S_F3Bo", "backup_gameplay", "*00:01:30-00:02:20"),
     ]
-    for url, name in targets:
+    for url, name, section in targets:
         pattern=str(OUT / (name+".%(ext)s"))
         args=[
           "yt-dlp","--no-playlist","--no-part","--no-warnings",
-          "--download-sections","*00:01:30-00:02:20",
+          "--download-sections",section,
           "--force-keyframes-at-cuts",
           "-f","bv*[height<=720]+ba/b[height<=720]/best",
           "--merge-output-format","mp4","-o",pattern,url
