@@ -29,6 +29,7 @@ def get_footage():
         return Path(os.environ["FOOTAGE_FILE"])
     # Only real captured Skyrim gameplay: fail if unavailable; never substitute generated slides.
     targets=[
+        ("https://www.gamersyde.com/video_the_elder_scrolls_v_skyrim_gameplay_demo_part_1-23439_en.html", "bethesda_download"),
         ("https://www.youtube.com/watch?v=5xwboyafbwc", "official_bethesda"),
         ("https://www.youtube.com/watch?v=QWoF8S_F3Bo", "backup_gameplay"),
     ]
