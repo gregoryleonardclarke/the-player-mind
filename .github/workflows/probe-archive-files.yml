@@ -1,0 +1,17 @@
+name: Probe Archive HD Skyrim files
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/probe_archive_files.py
+      - .github/workflows/probe-archive-files.yml
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install -q requests
+      - run: python scripts/probe_archive_files.py
