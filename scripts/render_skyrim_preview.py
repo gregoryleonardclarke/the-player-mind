@@ -29,6 +29,8 @@ def get_footage():
         return Path(os.environ["FOOTAGE_FILE"])
     # Only real captured Skyrim gameplay: fail if unavailable; never substitute generated slides.
     targets=[
+        ("https://www.dailymotion.com/video/x9xjfas", "whiterun_aerial", "*00:00:10-00:00:47"),
+        ("https://www.dailymotion.com/video/x7tyy7q", "skyrim_playthrough", "*00:01:30-00:02:15"),
         ("https://vimeo.com/182690011", "vimeo_skyrim", "*00:00:00-00:00:40"),
         ("https://vimeo.com/713796833", "vimeo_skyrim2", "*00:00:00-00:00:40"),
         ("https://www.gamersyde.com/video_the_elder_scrolls_v_skyrim_gameplay_demo_part_1-23439_en.html", "bethesda_download", "*00:01:30-00:02:20"),
