@@ -1,0 +1,244 @@
+{
+  "title": "Why Is Subnautica Scary Before Anything Attacks?",
+  "duration": 110,
+  "sources": [
+    "subnautica-ghost-leviathans-hd"
+  ],
+  "cards": [
+    {
+      "start": 0,
+      "end": 5,
+      "lines": [
+        "WHY IS SUBNAUTICA",
+        "SCARY BEFORE",
+        "ANYTHING ATTACKS?"
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 5,
+      "end": 10,
+      "lines": [
+        "THE WATER",
+        "LOOKS EMPTY."
+      ],
+      "emphasis": 1
+    },
+    {
+      "start": 10,
+      "end": 15,
+      "lines": [
+        "BUT SOMETHING",
+        "MIGHT BE",
+        "OUT THERE."
+      ],
+      "emphasis": 2
+    },
+    {
+      "start": 15,
+      "end": 20,
+      "lines": [
+        "THAT WAITING",
+        "IS PART",
+        "OF THE TENSION."
+      ],
+      "emphasis": 1
+    },
+    {
+      "start": 20,
+      "end": 25,
+      "lines": [
+        "PSYCHOLOGY MAKES",
+        "A USEFUL",
+        "DISTINCTION."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 25,
+      "end": 30,
+      "lines": [
+        "FEAR OFTEN FOLLOWS",
+        "A CLEAR",
+        "IMMEDIATE THREAT."
+      ],
+      "emphasis": 1
+    },
+    {
+      "start": 30,
+      "end": 35,
+      "lines": [
+        "ANXIETY CAN LAST",
+        "WHEN DANGER",
+        "IS UNCERTAIN."
+      ],
+      "emphasis": 1
+    },
+    {
+      "start": 35,
+      "end": 40,
+      "lines": [
+        "ONE EXPERIMENT",
+        "TESTED",
+        "PREDICTABLE THREATS."
+      ],
+      "emphasis": 1
+    },
+    {
+      "start": 40,
+      "end": 45,
+      "lines": [
+        "AND COMPARED THEM",
+        "WITH THREATS",
+        "THAT CAME UNANNOUNCED."
+      ],
+      "emphasis": 1
+    },
+    {
+      "start": 45,
+      "end": 50,
+      "lines": [
+        "UNPREDICTABLE SHOCKS",
+        "PRODUCED MORE",
+        "SUSTAINED STARTLE."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 50,
+      "end": 55,
+      "lines": [
+        "BUT THIS WASN'T TRUE",
+        "FOR EVERY KIND",
+        "OF THREAT."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 55,
+      "end": 60,
+      "lines": [
+        "UNCERTAINTY ALONE",
+        "IS NOT A",
+        "MAGIC FEAR BUTTON."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 60,
+      "end": 65,
+      "lines": [
+        "THE POSSIBLE DANGER",
+        "HAS TO FEEL",
+        "IMPORTANT."
+      ],
+      "emphasis": 1
+    },
+    {
+      "start": 65,
+      "end": 70,
+      "lines": [
+        "NOW THINK",
+        "ABOUT SUBNAUTICA."
+      ],
+      "emphasis": 1
+    },
+    {
+      "start": 70,
+      "end": 75,
+      "lines": [
+        "DARK WATER",
+        "HIDES WHAT",
+        "MIGHT BE NEAR."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 75,
+      "end": 80,
+      "lines": [
+        "YOU HEAR A ROAR",
+        "WITHOUT SEEING",
+        "WHAT MADE IT."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 80,
+      "end": 85,
+      "lines": [
+        "THE POSSIBILITY",
+        "KEEPS YOU",
+        "ON EDGE."
+      ],
+      "emphasis": 1
+    },
+    {
+      "start": 85,
+      "end": 90,
+      "lines": [
+        "A SECOND EXPERIMENT",
+        "USED A",
+        "VIRTUAL PREDATOR."
+      ],
+      "emphasis": 1
+    },
+    {
+      "start": 90,
+      "end": 95,
+      "lines": [
+        "AS IT GOT CLOSER,",
+        "THREAT-RELATED",
+        "BRAIN ACTIVITY CHANGED."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 95,
+      "end": 100,
+      "lines": [
+        "PARTICIPANTS ALSO",
+        "REPORTED",
+        "GREATER DREAD."
+      ],
+      "emphasis": 1
+    },
+    {
+      "start": 100,
+      "end": 105,
+      "lines": [
+        "SO THE DESIGN TRICK:",
+        "LET US SENSE",
+        "DANGER BEFORE SEEING IT."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 105,
+      "end": 110,
+      "lines": [
+        "WHAT'S WORSE:",
+        "THE EMPTY WATER",
+        "OR THE LEVIATHAN?"
+      ],
+      "emphasis": 1
+    }
+  ],
+  "research": [
+    {
+      "citation": "Grillon, Baas, Lissek, Smith & Milstein (2004), Anxious responses to predictable and unpredictable aversive events, Behavioral Neuroscience 118(5):916–924",
+      "url": "https://doi.org/10.1037/0735-7044.118.5.916",
+      "claim": "Experiment comparing predictable vs unpredictable aversive events: unpredictable shock contexts heightened sustained startle; this effect was absent for less aversive airblast condition. Does not directly study game players."
+    },
+    {
+      "citation": "Mobbs et al. (2007), When Fear Is Near: Threat Imminence Elicits Prefrontal-Periaqueductal Gray Shifts in Humans, Science 317:1079–1083",
+      "url": "https://doi.org/10.1126/science.1144298",
+      "claim": "In a virtual predator chase experiment, neural response patterns shifted as the predator approached; greater dread correlated with imminence. Not a Subnautica-specific experiment."
+    }
+  ],
+  "description": "A research-informed mini lesson exploring predictable vs uncertain threat, startle reactions and threat imminence, illustrated with real Subnautica gameplay. Clarifies that psychology lab research does not directly prove how all Subnautica players react. 110 seconds; soundtrack and text captions only. Production review v2: replace base-tour recording with actual underwater leviathan confrontations. Final footage-only review revision: Leviathan pursuit gameplay, avoiding branded interstitials.",
+  "youtube_title": "Why Is Subnautica Terrifying BEFORE Anything Attacks? | Gaming Psychology",
+  "social_caption": "Why can the ocean in Subnautica feel terrifying even when there's nothing in sight? 🌊 Psychology gives us two clues: unpredictable threats can sustain anxious anticipation, and our response changes as danger draws closer. We explore the science using real Subnautica gameplay — without claiming that laboratory findings are direct proof about every player.\n\nResearch: Grillon et al. (2004), DOI: 10.1037/0735-7044.118.5.916; Mobbs et al. (2007), DOI: 10.1126/science.1144298.\n\nWhat's scarier: the empty water or seeing the Reaper? 🎮🧠\n\n#Subnautica #GamingPsychology #HorrorGames #ThePlayerMind",
+  "approved": false,
+  "publish": false
+}
