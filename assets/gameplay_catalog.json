@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "quality_policy": "Only original verified >=1920x1080 captured gameplay, no stock gamer footage, no static imagery. A video may only be rendered for a catalogued source appropriate to its psychological topic.",
+  "sources": [
+    {
+      "id": "skyrim-barrow",
+      "game": "Skyrim",
+      "identifier": "20111111-skyrim-gameplay-bleak-falls-barrow-boss-fight-116s-1920x-1080-q-99h-fmyt-oq",
+      "filename": "20111111 - Skyrim Gameplay： Bleak Falls Barrow Boss Fight - (116s) [1920x1080] [q99h-fmytOQ].mp4",
+      "duration": 116,
+      "topics": [
+        "resource hoarding",
+        "difficulty",
+        "exploration",
+        "mastery",
+        "rpg progression"
+      ],
+      "detail": "Recorded RPG dungeon and boss-fight footage"
+    },
+    {
+      "id": "skyrim-stormcloak",
+      "game": "Skyrim",
+      "identifier": "20111111-skyrim-gameplay-join-the-stormcloak-rebellion-125s-1920x-1080-q-5f-w-jt-8-rao",
+      "filename": "20111111 - Skyrim Gameplay： Join the Stormcloak Rebellion - (125s) [1920x1080] [q5fW_jt8Rao].mp4",
+      "duration": 125,
+      "topics": [
+        "roleplaying",
+        "identity",
+        "choices",
+        "exploration",
+        "rpg progression"
+      ],
+      "detail": "Recorded quest and outdoor Skyrim gameplay"
+    },
+    {
+      "id": "hades-combat",
+      "game": "Hades",
+      "identifier": "2025-01-13-20-17-03",
+      "filename": "2025-01-13 20-17-03.mp4",
+      "duration": 174,
+      "topics": [
+        "repeated failure",
+        "flow",
+        "mastery",
+        "risk taking",
+        "difficulty",
+        "roguelike progression"
+      ],
+      "detail": "Recorded Hades gameplay (not a reaction or review)"
+    },
+    {
+      "id": "stardew-farming",
+      "game": "Stardew Valley",
+      "identifier": "youtube-SaTXpk21DSc",
+      "filename": "SaTXpk21DSc.webm",
+      "duration": 254,
+      "topics": [
+        "routine",
+        "comfort",
+        "low-stress gaming",
+        "habit formation",
+        "farming",
+        "long-term goals"
+      ],
+      "detail": "Recorded Stardew Valley farming activity"
+    },
+    {
+      "id": "fallout4-dialogue",
+      "game": "Fallout 4",
+      "identifier": "fallout-4-how-to-prove-you-arent-a-communist",
+      "filename": "Fallout 4 - How to Prove You Aren't a Communist.mp4",
+      "duration": 103,
+      "topics": [
+        "dialogue",
+        "moral choices",
+        "narrative",
+        "roleplaying",
+        "identity"
+      ],
+      "detail": "Gameplay scene involving a dialogue choice"
+    },
+    {
+      "id": "subnautica-leviathan",
+      "game": "Subnautica",
+      "identifier": "subnautica-reaper-leviathan-observatory",
+      "filename": "Subnautica Reaper Leviathan Observatory.mp4",
+      "duration": 271,
+      "topics": [
+        "fear",
+        "uncertainty",
+        "exploration",
+        "threat perception",
+        "immersion"
+      ],
+      "detail": "Recorded undersea creature encounter"
+    },
+    {
+      "id": "dark-souls-run",
+      "game": "Dark Souls",
+      "identifier": "twitch-vod-v1270595037",
+      "filename": "v1270595037.mp4",
+      "duration": 297,
+      "topics": [
+        "challenge",
+        "failure",
+        "mastery",
+        "flow",
+        "difficulty"
+      ],
+      "detail": "Full HD recorded gameplay stream, may include streamer's interface/audio (audio removed in edits)"
+    }
+  ]
+}
