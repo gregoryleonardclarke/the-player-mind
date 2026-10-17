@@ -42,11 +42,11 @@ jobs:
         run: |
           if ! gh release view the-player-mind-fallout4-rpg-choices-v1 >/dev/null 2>&1; then
             gh release create the-player-mind-fallout4-rpg-choices-v1 \
-              media/the_player_mind_review.mp4#Fallout4_RPG_Choices_The_Player_Mind.mp4 \
+              media/the_player_mind_review.mp4 \
               --title "The Player Mind — Why RPG Choices Feel So Personal" \
               --notes "User-approved 100-second Fallout 4 gameplay psychology short, made for TikTok, Instagram Reels and YouTube Shorts."
           fi
           gh release view the-player-mind-fallout4-rpg-choices-v1 --json assets,url
           curl -fsSL -r 0-1023 -o /dev/null -w "ASSET HTTP %{http_code}\n" \
-            "https://github.com/$(echo "$GITHUB_REPOSITORY")/releases/download/the-player-mind-fallout4-rpg-choices-v1/skyrim_potion_psychology_mini_lesson.mp4"
+            "https://github.com/$(echo "$GITHUB_REPOSITORY")/releases/download/the-player-mind-fallout4-rpg-choices-v1/the_player_mind_review.mp4"
 # Intentionally no scheduling or social publishing.
