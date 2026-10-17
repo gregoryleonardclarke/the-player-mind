@@ -1,0 +1,42 @@
+name: The Player Mind — Daily review video (never auto-publish)
+on:
+  push:
+    paths:
+      - "briefs/**"
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+  issues: write
+concurrency:
+  group: tpm-daily-render
+  cancel-in-progress: false
+jobs:
+  render-for-approval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install local editing dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install --quiet pillow numpy scipy
+      - name: Research brief → HD gameplay short with music and captions
+        run: python scripts/render_daily.py
+      - name: Attach video for manual approval
+        uses: actions/upload-artifact@v4
+        with:
+          name: player-mind-review-1080p
+          path: |
+            output/the_player_mind_review.mp4
+            output/preview.png
+            output/review_info.json
+            output/review_summary.md
+          retention-days: 7
+          if-no-files-found: error
+      - name: Open review request and notify GitHub account owner
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/notify_review.py
+# There is deliberately NO media upload to Buffer, TikTok, Instagram or YouTube.
