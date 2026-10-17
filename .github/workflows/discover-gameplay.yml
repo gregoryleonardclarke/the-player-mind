@@ -1,0 +1,17 @@
+name: Discover verified gameplay sources (inspection only)
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/discover_gameplay.py
+      - .github/workflows/discover-gameplay.yml
+permissions:
+  contents: read
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --quiet requests
+      - run: python scripts/discover_gameplay.py
