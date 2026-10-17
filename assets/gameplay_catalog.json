@@ -108,6 +108,23 @@
         "difficulty"
       ],
       "detail": "Full HD recorded gameplay stream, may include streamer's interface/audio (audio removed in edits)"
+    },
+    {
+      "id": "subnautica-leviathan-encounters",
+      "game": "Subnautica",
+      "identifier": "youtube-qVzBjVgoYHY",
+      "filename": "qVzBjVgoYHY.webm",
+      "duration": 312,
+      "topics": [
+        "fear",
+        "uncertainty",
+        "predators",
+        "leviathans",
+        "threat perception",
+        "horror",
+        "immersion"
+      ],
+      "detail": "Actual 1920x1080 captured gameplay featuring encounters and fights with multiple leviathans; use without original audio"
     }
   ]
 }
