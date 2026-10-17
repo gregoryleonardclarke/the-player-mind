@@ -1,0 +1,221 @@
+{
+  "title": "Why Do RPG Choices Feel So Personal?",
+  "duration": 100,
+  "sources": [
+    "fallout4-dialogue"
+  ],
+  "cards": [
+    {
+      "start": 0,
+      "end": 5,
+      "lines": [
+        "WHY DO RPG CHOICES",
+        "FEEL SO PERSONAL?"
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 5,
+      "end": 10,
+      "lines": [
+        "A SIMPLE DIALOGUE",
+        "OPTION CAN MAKE",
+        "YOU PAUSE."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 10,
+      "end": 15,
+      "lines": [
+        "DO YOU TELL",
+        "THE TRUTH OR",
+        "PROTECT SOMEONE?"
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 15,
+      "end": 20,
+      "lines": [
+        "IT'S NOT JUST",
+        "ABOUT THE REWARD."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 20,
+      "end": 25,
+      "lines": [
+        "ONE CLUE IS",
+        "AUTONOMY."
+      ],
+      "emphasis": 1
+    },
+    {
+      "start": 25,
+      "end": 30,
+      "lines": [
+        "THAT MEANS FEELING",
+        "YOU HAVE",
+        "MEANINGFUL CHOICE."
+      ],
+      "emphasis": 2
+    },
+    {
+      "start": 30,
+      "end": 35,
+      "lines": [
+        "IN PSYCHOLOGY,",
+        "AUTONOMY IS A",
+        "BASIC HUMAN NEED."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 35,
+      "end": 40,
+      "lines": [
+        "VIDEO GAME STUDIES",
+        "LINK AUTONOMY WITH",
+        "GREATER ENJOYMENT."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 40,
+      "end": 45,
+      "lines": [
+        "BUT THREE BUTTONS",
+        "DON'T ALWAYS MEAN",
+        "THREE REAL CHOICES."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 45,
+      "end": 50,
+      "lines": [
+        "IF EVERY OPTION",
+        "HAS THE SAME EFFECT,",
+        "IT MAY FEEL EMPTY."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 50,
+      "end": 55,
+      "lines": [
+        "WHAT MATTERS IS",
+        "HAVING SOME",
+        "REAL INFLUENCE."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 55,
+      "end": 60,
+      "lines": [
+        "THE CONSEQUENCE",
+        "DOESN'T HAVE",
+        "TO BE HUGE."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 60,
+      "end": 65,
+      "lines": [
+        "A CHARACTER",
+        "REMEMBERING YOUR",
+        "CHOICE CAN MATTER."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 65,
+      "end": 70,
+      "lines": [
+        "DECISIONS ALSO",
+        "EXPRESS WHO YOUR",
+        "CHARACTER IS."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 70,
+      "end": 75,
+      "lines": [
+        "BRAVE? SELFISH?",
+        "LOYAL?"
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 75,
+      "end": 80,
+      "lines": [
+        "YOUR CHOICES",
+        "HELP TELL THEIR",
+        "STORY."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 80,
+      "end": 85,
+      "lines": [
+        "THIS IS A",
+        "GAME DESIGN IDEA,",
+        "NOT MIND CONTROL."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 85,
+      "end": 90,
+      "lines": [
+        "SO HERE'S THE",
+        "DESIGN LESSON:"
+      ],
+      "emphasis": 1
+    },
+    {
+      "start": 90,
+      "end": 95,
+      "lines": [
+        "GIVE PLAYERS",
+        "VISIBLE CONSEQUENCES,",
+        "NOT JUST BUTTONS."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 95,
+      "end": 100,
+      "lines": [
+        "WHICH RPG MADE",
+        "YOU REALLY THINK",
+        "ABOUT A CHOICE?"
+      ],
+      "emphasis": 0
+    }
+  ],
+  "research": [
+    {
+      "citation": "Ryan, Rigby & Przybylski (2006), The Motivational Pull of Video Games, Motivation and Emotion",
+      "url": "https://doi.org/10.1007/s11031-006-9051-8",
+      "claim": "Autonomy, competence and relatedness are associated with game motivation and enjoyment; research is not direct proof that every Fallout dialogue choice is meaningful."
+    },
+    {
+      "citation": "Deci & Ryan (2000), The What and Why of Goal Pursuits: Human Needs and the Self-Determination of Behavior, Psychological Inquiry",
+      "url": "https://doi.org/10.1207/S15327965PLI1104_01",
+      "claim": "Self-Determination Theory identifies autonomy as a basic psychological need."
+    }
+  ],
+  "description": "A research-informed introduction to autonomy and meaningful choices in roleplaying games, illustrated using Fallout 4 gameplay. Correlational findings from game motivation research are distinguished from game design interpretations.",
+  "youtube_title": "Why RPG Choices Feel So Personal | Gaming Psychology",
+  "social_caption": "Ever hesitated over a dialogue choice in an RPG? 🎮 Psychology offers one clue: autonomy — feeling that your decisions genuinely matter. We explore why three dialogue buttons don't always create meaningful choice. Based on Self-Determination Theory and studies of game enjoyment; this isn't a diagnosis of players. Which RPG made you stop and think? #Fallout4 #GamingPsychology #RPG #ThePlayerMind",
+  "approved": false,
+  "publish": false
+}
