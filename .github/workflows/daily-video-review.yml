@@ -3,6 +3,8 @@ on:
   push:
     paths:
       - "briefs/**"
+      - "scripts/render_daily.py"
+      - ".github/workflows/daily-video-review.yml"
   workflow_dispatch:
 permissions:
   contents: read
@@ -24,6 +26,8 @@ jobs:
           python -m pip install --quiet pillow numpy scipy
       - name: Research brief → HD gameplay short with music and captions
         run: python scripts/render_daily.py
+        env:
+          BRIEF_PATH: briefs/2026-10-18-hades-failure.json
       - name: Attach video for manual approval
         uses: actions/upload-artifact@v4
         with:
