@@ -166,6 +166,11 @@ def render(paths,duration,brief):
         path,dur=paths[src]
         length=min(segment_length,duration-k*segment_length)
         start=(k//len(paths))*17+((src*11)%19)
+        # Hades source begins with non-gameplay menus; select later in-run footage.
+        if brief.get("gameplay_start_seconds") is not None:
+            offset=float(brief["gameplay_start_seconds"])
+            if not 0<=offset<dur-length-1:raise ValueError("Gameplay start offset outside footage")
+            start=offset+(start % max(1,dur-offset-length-1))
         if start+length>dur-0.8:
             start=max(0,(start % max(1,dur-length-1)))
         name=f"src{src}_{seq[src]}";seq[src]+=1
