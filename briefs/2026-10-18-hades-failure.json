@@ -217,9 +217,10 @@
       "claim": "GameFlow proposes that clear feedback and challenges suited to player skill contribute to game enjoyment; it is a design model, not proof that all failure is motivating."
     }
   ],
-  "description": "Research-informed look at competence, feedback, challenge-skill balance and why repeated attempts can be satisfying in Hades, without treating every defeat as enjoyable.",
+  "description": "Research-informed look at competence, feedback, challenge-skill balance and why repeated attempts can be satisfying in Hades, without treating every defeat as enjoyable. This revised cut excludes the first 55 seconds of the archived source, which contain menus rather than action.",
   "youtube_title": "How Does Hades Keep You Playing? | Gaming Psychology",
   "social_caption": "What makes Hades so hard to put down? 🎮 Competence, useful feedback and challenge-skill balance offer clues to the 'one more run' feeling. Not every defeat is fun — but learning and progression can make another attempt appealing. Which roguelike keeps you coming back? #Hades #GamingPsychology #Roguelike #ThePlayerMind",
   "approved": false,
-  "publish": false
+  "publish": false,
+  "gameplay_start_seconds": 55
 }
