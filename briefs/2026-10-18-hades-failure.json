@@ -1,0 +1,226 @@
+{
+  "title": "Why Does Losing in Hades Make You Try Again?",
+  "duration": 100,
+  "sources": [
+    "hades-combat"
+  ],
+  "cards": [
+    {
+      "start": 0,
+      "end": 5,
+      "lines": [
+        "WHY DOES LOSING",
+        "IN HADES MAKE YOU",
+        "TRY AGAIN?"
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 5,
+      "end": 10,
+      "lines": [
+        "YOU FALL IN BATTLE.",
+        "THEN YOU HEAD",
+        "BACK OUT."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 10,
+      "end": 15,
+      "lines": [
+        "SAME UNDERWORLD.",
+        "ANOTHER RUN.",
+        "ANOTHER CHANCE."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 15,
+      "end": 20,
+      "lines": [
+        "WHY CAN FAILURE",
+        "FEEL MOTIVATING",
+        "INSTEAD OF FINAL?"
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 20,
+      "end": 25,
+      "lines": [
+        "ONE CLUE IS",
+        "A SENSE OF",
+        "COMPETENCE."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 25,
+      "end": 30,
+      "lines": [
+        "THAT'S THE FEELING",
+        "YOU CAN LEARN",
+        "AND IMPROVE."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 30,
+      "end": 35,
+      "lines": [
+        "SELF-DETERMINATION",
+        "THEORY CALLS IT",
+        "A BASIC NEED."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 35,
+      "end": 40,
+      "lines": [
+        "GAME RESEARCH LINKS",
+        "COMPETENCE WITH",
+        "ENJOYMENT."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 40,
+      "end": 45,
+      "lines": [
+        "BUT NOT EVERY",
+        "DEFEAT FEELS",
+        "FAIR OR FUN."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 45,
+      "end": 50,
+      "lines": [
+        "IN HADES, YOU",
+        "PRACTISE TIMING",
+        "AND POSITIONING."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 50,
+      "end": 55,
+      "lines": [
+        "YOU NOTICE WHICH",
+        "ENEMIES SIGNAL",
+        "THEIR ATTACKS."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 55,
+      "end": 60,
+      "lines": [
+        "NEXT TIME, YOU",
+        "MIGHT DODGE",
+        "A LITTLE BETTER."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 60,
+      "end": 65,
+      "lines": [
+        "THAT'S FEEDBACK",
+        "YOU CAN ACT ON,",
+        "NOT JUST A LOSS."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 65,
+      "end": 70,
+      "lines": [
+        "THERE'S ALSO",
+        "A USEFUL IDEA:",
+        "OPTIMAL CHALLENGE."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 70,
+      "end": 75,
+      "lines": [
+        "TOO EASY, AND",
+        "THERE'S LITTLE",
+        "TO LEARN."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 75,
+      "end": 80,
+      "lines": [
+        "TOO HARD, AND",
+        "EFFORT CAN FEEL",
+        "POINTLESS."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 80,
+      "end": 85,
+      "lines": [
+        "CHALLENGE THAT",
+        "MATCHES SKILL",
+        "CAN SUPPORT FLOW."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 85,
+      "end": 90,
+      "lines": [
+        "HADES ALSO GIVES",
+        "PROGRESSION BETWEEN",
+        "RUNS."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 90,
+      "end": 95,
+      "lines": [
+        "SO FAILURE MAY",
+        "STILL FEEL LIKE",
+        "FORWARD MOTION."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 95,
+      "end": 100,
+      "lines": [
+        "WHICH GAME MADE",
+        "YOU WANT ONE",
+        "MORE ATTEMPT?"
+      ],
+      "emphasis": 0
+    }
+  ],
+  "research": [
+    {
+      "citation": "Ryan, Rigby & Przybylski (2006), The Motivational Pull of Video Games, Motivation and Emotion",
+      "url": "https://doi.org/10.1007/s11031-006-9051-8",
+      "claim": "Perceived competence, autonomy and relatedness help explain video-game enjoyment and motivation; this does not directly test Hades players."
+    },
+    {
+      "citation": "Sweetser & Wyeth (2005), GameFlow: A Model for Evaluating Player Enjoyment in Games, Computers in Entertainment",
+      "url": "https://doi.org/10.1145/1077246.1077253",
+      "claim": "GameFlow proposes that clear feedback and challenges suited to player skill contribute to game enjoyment; it is a design model, not proof that all failure is motivating."
+    }
+  ],
+  "description": "Research-informed look at competence, feedback, challenge-skill balance and why repeated attempts can be satisfying in Hades, without treating every defeat as enjoyable.",
+  "youtube_title": "Why Losing in Hades Makes You Try Again | Gaming Psychology",
+  "social_caption": "Why do we hit 'one more run' after losing in Hades? 🎮 Competence, useful feedback and challenge-skill balance offer clues. Game psychology doesn't say every defeat is fun — but learning from failure can feel rewarding. What's your favourite 'one more try' game? #Hades #GamingPsychology #Roguelike #ThePlayerMind",
+  "approved": false,
+  "publish": false
+}
