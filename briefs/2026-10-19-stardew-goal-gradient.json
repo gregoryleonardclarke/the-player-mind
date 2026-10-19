@@ -1,0 +1,227 @@
+{
+  "title": "Why Is One More Day in Stardew Valley Never Enough?",
+  "duration": 100,
+  "sources": [
+    "stardew-farming"
+  ],
+  "cards": [
+    {
+      "start": 0,
+      "end": 5,
+      "lines": [
+        "WHY IS IT SO HARD",
+        "TO STOP AFTER",
+        "ONE STARDEW DAY?"
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 5,
+      "end": 10,
+      "lines": [
+        "YOU WATER THE CROPS.",
+        "THEN YOU SPOT",
+        "ONE MORE JOB."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 10,
+      "end": 15,
+      "lines": [
+        "THE BARN NEEDS WOOD.",
+        "THE CROPS ARE",
+        "NEARLY READY."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 15,
+      "end": 20,
+      "lines": [
+        "JUST ONE MORE DAY",
+        "BECOMES THREE."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 20,
+      "end": 25,
+      "lines": [
+        "ONE CLUE IS THE",
+        "GOAL-GRADIENT EFFECT."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 25,
+      "end": 30,
+      "lines": [
+        "EFFORT CAN INCREASE",
+        "AS A REWARD",
+        "GETS CLOSER."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 30,
+      "end": 35,
+      "lines": [
+        "RESEARCHERS STUDIED",
+        "THIS WITH COFFEE",
+        "REWARD CARDS."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 35,
+      "end": 40,
+      "lines": [
+        "CUSTOMERS BOUGHT",
+        "COFFEE MORE OFTEN",
+        "NEAR A FREE CUP."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 40,
+      "end": 45,
+      "lines": [
+        "ANOTHER EXPERIMENT",
+        "USED CAR WASH",
+        "LOYALTY CARDS."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 45,
+      "end": 50,
+      "lines": [
+        "SOME STARTED WITH",
+        "TWO STAMPS",
+        "ALREADY FILLED."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 50,
+      "end": 55,
+      "lines": [
+        "BOTH GROUPS STILL",
+        "NEEDED EIGHT",
+        "MORE PURCHASES."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 55,
+      "end": 60,
+      "lines": [
+        "BUT THE HEAD-START",
+        "GROUP WAS MORE",
+        "LIKELY TO FINISH."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 60,
+      "end": 65,
+      "lines": [
+        "THESE WERE STUDIES",
+        "OF LOYALTY SCHEMES,",
+        "NOT STARDEW PLAYERS."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 65,
+      "end": 70,
+      "lines": [
+        "NOW IMAGINE A",
+        "HARVEST THAT'S",
+        "ONE DAY AWAY."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 70,
+      "end": 75,
+      "lines": [
+        "OR A BUILDING",
+        "THAT NEEDS JUST",
+        "TEN MORE WOOD."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 75,
+      "end": 80,
+      "lines": [
+        "THE FINISH LINE",
+        "CAN FEEL CLOSE",
+        "ENOUGH TO CHASE."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 80,
+      "end": 85,
+      "lines": [
+        "THEN YOU COLLECT.",
+        "AND A NEW GOAL",
+        "TAKES ITS PLACE."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 85,
+      "end": 90,
+      "lines": [
+        "THAT'S A DESIGN",
+        "INTERPRETATION,",
+        "NOT DIRECT PROOF."
+      ],
+      "emphasis": -1
+    },
+    {
+      "start": 90,
+      "end": 95,
+      "lines": [
+        "TRY THIS: NOTICE",
+        "WHICH NEARLY-DONE",
+        "GOAL KEEPS YOU ON."
+      ],
+      "emphasis": 0
+    },
+    {
+      "start": 95,
+      "end": 100,
+      "lines": [
+        "WHAT WAS YOUR",
+        "LAST 'ONE MORE DAY'",
+        "MOMENT?"
+      ],
+      "emphasis": -1
+    }
+  ],
+  "research": [
+    {
+      "citation": "Kivetz, Urminsky & Zheng (2006), The Goal-Gradient Hypothesis Resurrected: Purchase Acceleration, Illusionary Goal Progress, and Customer Retention, Journal of Marketing Research 43(1), 39–58",
+      "url": "https://doi.org/10.1509/jmkr.43.1.39",
+      "claim": "In a café loyalty programme, customers purchased coffee more frequently as they neared a free-coffee reward. Additional field/online studies supported a goal-gradient pattern. This did not test Stardew Valley or game engagement."
+    },
+    {
+      "citation": "Nunes & Drèze (2006), The Endowed Progress Effect: How Artificial Advancement Increases Effort, Journal of Consumer Research 32(4), 504–512",
+      "url": "https://doi.org/10.1086/500480",
+      "claim": "In reward-programme field experiments, giving customers apparent initial progress (two pre-stamped spaces on a ten-stamp card) increased completion relative to an unstamped eight-stamp card, although both required eight further purchases. The result concerns loyalty programmes, not in-game farm goals."
+    }
+  ],
+  "description": "A 100-second research-informed lesson on why near-complete goals may make Stardew Valley's day-to-day tasks compelling. Demonstrates goal-gradient findings with coffee and car-wash reward programmes, then explicitly labels the application to crops and construction as an untested game-design interpretation. Visuals must show genuine HD Stardew Valley farming gameplay from the catalogued source; no static images or fabricated scenes. Review only, never auto-publish.",
+  "youtube_title": "Why Is One More Day in Stardew Valley Never Enough? | Gaming Psychology",
+  "social_caption": "Ever said 'just one more day' in Stardew Valley? 🌱 Research on the goal-gradient effect found that people sometimes increase effort as rewards get closer. We explore why a nearly ready harvest or almost-finished building might make it tempting to keep playing. The experiments were on loyalty programmes, NOT Stardew players. What's your longest 'one more day' session? #StardewValley #GamingPsychology #ThePlayerMind",
+  "tiktok_caption": "One more day in Stardew Valley… then suddenly it's midnight. 🌱 Could the goal-gradient effect help explain why almost-ready crops and nearly-finished projects pull us back? Evidence comes from reward-programme studies, not experiments on Stardew players. What always keeps you playing? #StardewValley #GamingPsychology #CozyGames #ThePlayerMind",
+  "instagram_caption": "🌱 One more Stardew Valley day. One more harvest. One more building upgrade.\n\nResearch on the goal-gradient effect found that people sometimes put in more effort as they approach a reward. Could that help explain the pull of nearly finished farm projects? It's a plausible design interpretation, not a direct finding about Stardew players.\n\nWhat task always keeps you playing? 🎮🧠\n\n#StardewValley #GamingPsychology #CosyGames #ThePlayerMind",
+  "youtube_description": "Why does one more day in Stardew Valley so often become three? We explain the goal-gradient effect using actual reward-programme research, then explore a cautious interpretation of Stardew Valley's nearly complete goals.\n\nPrimary research:\nKivetz, Urminsky & Zheng (2006): https://doi.org/10.1509/jmkr.43.1.39\nNunes & Drèze (2006): https://doi.org/10.1086/500480\n\nThese experiments studied loyalty programmes, not Stardew Valley players. The game-design application is an inference, not a demonstrated causal effect.\n\n#StardewValley #GamingPsychology #ThePlayerMind #Shorts",
+  "approved": false,
+  "publish": false
+}
